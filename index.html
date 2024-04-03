@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="btn btn-success" style="text-align: center; align-items: center; justify-content: center; display: flex;">Developer Super League TASK Completed By Team Desi Developers</h1>
+    <h1 style="text-align: center; align-items: center; justify-content: center; display: flex;">Image Gallery</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="gallery">
+        <div class="thumbnails">
+          <img src="Images/_a6574887-59b6-40fb-9589-3d0cab252e77.jpg" alt="Thumbnail 1" onclick="openLightbox('image1.jpg')">
+          <img src="Images/_ab956b57-8f37-4329-a498-e75609b1437a.jpg" alt="Thumbnail 2" onclick="openLightbox('image2.jpg')">
+          <img src="Images/_a6574887-59b6-40fb-9589-3d0cab252e77.jpg" alt="Thumbnail 2" onclick="openLightbox('image3.jpg')">
+          <img src="Images/_8751628a-8767-4efb-afa7-16ab585c7d11.jpg" alt="Thumbnail 2" onclick="openLightbox('image.jpg')">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <button class="prev" onclick="prevImage()">&#10094;</button>
+  <button class="next" onclick="nextImage()">&#10095;</button>
+  <img src="" id="lightbox-image" alt="Large Image">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
